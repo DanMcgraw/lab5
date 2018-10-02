@@ -150,18 +150,22 @@
         </fieldset>
 
       </div>
-      <fieldset>
-        <legend>
-          Meeting Details
-        </legend>
-        Client Name:<input type="text" name="name" /><br />
+
+      <div id="details">
+        <fieldset>
+          <legend>
+            Meeting Details
+          </legend>
+          Client Name:<input type="text" name="name" /><br />
         First meeting?<input type="checkbox" name="first" /><br />
         Client Type:<input type="radio" name="type" value="school" checked> school
-        <input type="radio" name="type" value="college"> college
-        <input type="radio" name="type" value="university"> university<br />
+          <input type="radio" name="type" value="college"> college
+          <input type="radio" name="type" value="university"> university<br />
         Meeting Date:<input type="date" name="date" />
       </fieldset>
-        <input type="submit" value="Submit">
+      </div>
+
+      <input type="submit" value="Submit">
     </form>
 
   </body>

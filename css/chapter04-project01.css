@@ -1,16 +1,25 @@
 /* general text formatting */
 
+html {
+  background-color: #444;
+}
+
 h1, h2, h3, nav, footer {
  font-family: Georgia, Cambria, "Times New Roman", serif;
 }
+
 body {
    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
-   font-size: 100%;
+   font-size: 14pt;
 }
+
+
 
 #calendar{
   width:300px;
-  margin:20pt auto;
+  margin:10pt auto;
+  padding: 5pt;
+  background-color: #888;
 }
 
 #calendar fieldset{
@@ -29,14 +38,7 @@ body {
 
 #calendar caption{
   color:black;
-  background-color: cyan;
-}
-
-
-#calendar tr:not(:first-child) th{
-  width: 32px;
-  height: 32px;
-  margin: 5pt;
+  background-color: #dfdfdf;
 }
 
 #calendar tr:first-child {
@@ -46,17 +48,64 @@ body {
 }
 
 #calendar tr:not(:first-child) th {
+  width: 32px;
+  height: 32px;
     background-color:#EFEFEF;
-    border:1px outset #000;
-    overflow:auto;
-
+    color: #303030;
+    border:3px outset #555;
 }
+
+#calendar tr:not(:first-child) th label {
+    border:2px outset #000;
+    display: block;
+    height:28px;
+}
+
+#calendar tr:not(:first-child) th label input span {
+  height:30px;
+  display:block;
+}
+
 #calendar tr:not(:first-child) th label input {
   position:absolute;
+  display:block;
   top:-20px;
 }
 
 #calendar tr:not(:first-child) th label input:checked + span {
     background-color:#404040;
     color:#F7F7F7;
+    height:30px;
+    display:block;
+}
+
+#details {
+  display:table;
+  margin: auto;
+  background-color: #cfcfcf;
+  padding:3pt;
+}
+
+#details legend {
+  text-align: center;
+}
+
+#details fieldset {
+  background-color: #efefef;
+}
+
+input[type=submit]{
+  background-color: #666; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+}
+
+input[type=submit]:focus{
+  outline: 0;
 }
