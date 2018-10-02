@@ -9,15 +9,13 @@
   </head>
 
   <body>
-    <form>
+    <form action="https://randyconnolly.com/tests/process.php" method="get" target="_blank">
       <div id="calendar">
         <fieldset>
           <table>
-            <tr>
-              <th colspan="7">
-                October 2018
-              </th>
-            </tr>
+            <caption>
+              October 2018
+            </caption>
             <tr>
               <th>
                 Su
@@ -41,9 +39,129 @@
                 Sa
               </th>
             </tr>
+            <tr>
+              <th>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="1"><span>1</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="2"><span>2</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="3"><span>3</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="4"><span>4</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="5"><span>5</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="6"><span>6</span></label>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <label><input type="radio" name="day" value="7"><span>7</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="8"><span>8</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="9"><span>9</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="10"><span>10</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="11"><span>11</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="12"><span>12</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="13"><span>13</span></label>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <label><input type="radio" name="day" value="14"><span>14</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="15"><span>15</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="16"><span>16</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="17"><span>17</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="18"><span>18</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="19"><span>19</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="20"><span>20</span></label>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <label><input type="radio" name="day" value="21"><span>21</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="22"><span>22</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="23"><span>23</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="24"><span>24</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="25"><span>25</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="26"><span>26</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="27"><span>27</span></label>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <label><input type="radio" name="day" value="28"><span>28</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="29"><span>29</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="30"><span>30</span></label>
+              </th>
+              <th>
+                <label><input type="radio" name="day" value="31"><span>31</span></label>
+              </th>
+              <th colspan="3">
+              </th>
+            </tr>
           </table>
         </fieldset>
+
       </div>
+      <fieldset>
+        <legend>
+          Meeting Details
+        </legend>
+        Client Name:<input type="text" name="name" /><br />
+        First meeting?<input type="checkbox" name="first" /><br />
+        Client Type:<input type="radio" name="type" value="school" checked> school
+        <input type="radio" name="type" value="college"> college
+        <input type="radio" name="type" value="university"> university<br />
+        Meeting Date:<input type="date" name="date" />
+      </fieldset>
+        <input type="submit" value="Submit">
     </form>
 
   </body>

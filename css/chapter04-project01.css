@@ -21,19 +21,42 @@ body {
   width:100%;
   height: 100%;
   margin:0 auto;
-  border-collapse: collapse;
 }
 
 #calendar td{
   padding:5px;
 }
 
-#calendar tr:nth-child(1){
+#calendar caption{
   color:black;
   background-color: cyan;
 }
 
-#calendar tr:nth-child(2){
+
+#calendar tr:not(:first-child) th{
+  width: 32px;
+  height: 32px;
+  margin: 5pt;
+}
+
+#calendar tr:first-child {
   color:gray;
   background-color: white;
+  font-size: 10pt;
+}
+
+#calendar tr:not(:first-child) th {
+    background-color:#EFEFEF;
+    border:1px outset #000;
+    overflow:auto;
+
+}
+#calendar tr:not(:first-child) th label input {
+  position:absolute;
+  top:-20px;
+}
+
+#calendar tr:not(:first-child) th label input:checked + span {
+    background-color:#404040;
+    color:#F7F7F7;
 }
