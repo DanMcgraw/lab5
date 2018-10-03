@@ -88,6 +88,7 @@ body {
 
 #details legend {
   text-align: center;
+  background-image: linear-gradient(to bottom, #cfcfcf , #efefef);
 }
 
 #details fieldset {
